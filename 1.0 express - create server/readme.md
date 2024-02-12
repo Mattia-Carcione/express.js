@@ -2,22 +2,39 @@
 
 ## create index.js
 
-## install npm 
-### npm init
+## install npm
+
+```sh 
+npm init
+```
 
 ## install express 
-### npm i express --save
+
+```sh
+ npm i express --save 
+```
 
 ## import dependencies in index.js
-### import express from 'express';
 
-## create express app
-### const app = express();
+```sh
+import express from 'express';
+```
+## create express app in index.js
 
-## set the port
-### const port = 3000;
+```sh
+const app = express();
+```
 
-## set app
-### app.listen(port, () => {
-###   console.log(`Server running at http://localhost:${port}`);
-###})
+## set the server port in index.js
+
+```sh
+const port = 3000; // or other port
+```
+
+## set app in index.js
+
+```sh
+app.listen(port, () => {
+   console.log(`Server running at http://localhost:${port}`);
+})
+```
