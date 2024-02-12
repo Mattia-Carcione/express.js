@@ -25,4 +25,5 @@ app.get('/', (req, res) => {
 
 app.post('/submit', (req, res) => {
     console.log(req.body); // print del body della richiesta
+    res.sendStatus(200);
 });
