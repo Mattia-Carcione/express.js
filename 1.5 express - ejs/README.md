@@ -43,7 +43,7 @@ For example:
 
 ### index.ejs
 ```
-<h1> <% console.log("hello world") %> </h1>
+<% console.log("hello world") %>
 ```
 
 ### output on console:
