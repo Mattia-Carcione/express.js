@@ -11,7 +11,7 @@ app.get("/", (req, res) => {
     const d = new Date(); // get current date
     const day = d.getDay(); // get current day number from current date
 
-    let type = "it's a workday";
+    let type = "it's a weekday";
     let adv = "let's work";
 
     if (day === 6 || day === 0) {
