@@ -79,9 +79,9 @@ hello world
 
 ## 5- ejs include tag
 ````
-<%- include("file") %>
+<%- include("file.ejs") %>
 ````
 
 * The function include() inserts another ejs file
 * It would be used when you want include a html component from other file
-* You must write the file's relative path without the extension
+* You must write the file's relative path
