@@ -1,18 +1,18 @@
 # Passing data from/to server
 
-* install 'body-parser'
+### install 'body-parser'
 ````
 npm i body-parser
 ````
 
-* import body parser in index.js
+### import body parser in index.js
 ````
 import bodyParser from "body-parser";
 app.use(bodyParser.urlencoded({ extended: true }));
 ````
 ## get data from client
 
-* create a form in index.ejs
+### create a form in index.ejs
 ````
 <form action="/submit" method="post">
     <label for="name">Name</label>
@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 </form>
 ````
 
-* save data from the form
+### save data from the form
 ````
 app.post("/submit", (req, res) => {
     // create local variable to get data from req.body
@@ -45,9 +45,9 @@ so the req.body.value now has the value of that input
 
 ## get data from server
 
-### get data from index.js through http request
+* get data from index.js through http request
 
-* create http request passing data with res.render() method
+### create http request passing data with res.render() method
 
 ### For string or number:
 ```
@@ -71,17 +71,17 @@ render accepts 2 params:
 res.render('file.ejs', object)
 
 
-* call data in index.ejs with ejs tag
+### call data in index.ejs with ejs tag
 ```
 <h1> <%= message %> </h1>
 ```
 
-* output on browser:
+### output on browser:
 ```
 Hello World
 ```
 
 ### my ejs tag doc here
-[text](https://github.com/Mattia-Carcione/express.js/blob/main/1.5%20express%20-%20ejs/README.md)
+https://github.com/Mattia-Carcione/express.js/blob/main/1.5%20express%20-%20ejs/README.md
 ### official ejs tag doc here
-[text](https://ejs.co/#docs)
+https://ejs.co/#docs
