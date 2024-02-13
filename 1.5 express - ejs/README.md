@@ -7,7 +7,7 @@
 
 * Outputs the value into the template (HTML escaped)
 
-* Variable should be passed from index.js like a object's key.
+* Variable should be passed from index.js like an object's key.
 
 For example: 
 
@@ -29,4 +29,24 @@ app.get("/", (req, res) => {
 ### output on browser:
 ```
 Hello World
+```
+
+## ejs tag execute
+````
+<% // write your code here %>
+````
+
+* 'Scriptlet' tag, for control-flow, no output
+* Executes the code between <% %>
+
+For example:
+
+### index.ejs
+```
+<h1> <% console.log("hello world") %> </h1>
+```
+
+### output on console:
+```
+hello world
 ```
