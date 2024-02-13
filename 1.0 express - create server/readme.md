@@ -38,3 +38,8 @@ app.listen(port, () => {
    console.log(`Server running at http://localhost:${port}`);
 })
 ```
+
+## run the server
+```sh
+node index.js
+```
