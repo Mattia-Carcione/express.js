@@ -67,7 +67,7 @@ app.get("/", (req, res) => {
     res.render(`index.ejs`, data);
 });
 ```
-### render accepts 2 params:
+render accepts 2 params:
 res.render('file.ejs', object)
 
 
