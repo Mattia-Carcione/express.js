@@ -1,6 +1,6 @@
 # EJS tag
 
-## ejs tag output
+## 1- ejs output tag
 ```
 <%= variable %>  
 ```
@@ -31,13 +31,13 @@ app.get("/", (req, res) => {
 Hello World
 ```
 
-## ejs tag execute
+## 2- ejs execute tag
 ````
 <% // write your code here %>
 ````
 
 * 'Scriptlet' tag, for control-flow, no output
-* Executes the code between <% %>
+* Runs the code between <% %>
 
 For example:
 
@@ -50,3 +50,25 @@ For example:
 ```
 hello world
 ```
+
+## 3- ejs render tag HTML
+````
+<%- <h1>Hello World</h1> %>
+````
+
+* Outputs the unescaped value into the template
+
+## 4- ejs comment tag
+````
+<%# your comment here %>
+````
+
+* Comment tag, no execution, no output
+
+## 5- ejs include tag
+````
+<%- include("file.ejs") %>
+````
+
+* The function include() inserts another ejs file
+* It would be used when you want include a html component from other file
