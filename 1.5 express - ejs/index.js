@@ -8,21 +8,12 @@ const app = express();
 const port = 3000;
 
 app.get("/", (req, res) => {
-    const d = new Date(); // get current date
-    const day = d.getDay(); // get current day number from current date
-
-    let type = "it's a weekday";
-    let adv = "let's work";
-
-    if (day === 6 || day === 0) {
-        type = "it's a weekend";
-        adv = "have a nice weekend";
+    let data = {
+        title: "EJS Tag",
+        list: ["Item 1", "Item 2", "Item 3"],
+        HTMLcontent: "<p><strong>This is a paragraph</strong></p>",
     }
-
-    res.render(`index.ejs`, {
-        type: type,
-        advice: adv
-    });
+    res.render(`index.ejs`, data);
 });
 
 app.listen(port, () => {

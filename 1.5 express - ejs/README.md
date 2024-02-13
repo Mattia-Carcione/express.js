@@ -14,18 +14,28 @@
 For example: 
 
 ### index.js
+* For string or number:
 ```
 app.get("/", (req, res) => {
-    let message = "Hello World";
+    let msg = "Hello World";
     res.render(`index.ejs`, {
-        key: message
+        message: msg
     });
+});
+```
+* for array or object:
+```
+app.get("/", (req, res) => {
+    let data = {
+        message: "Hello World"
+    };
+    res.render(`index.ejs`, data);
 });
 ```
 
 ### index.ejs
 ```
-<h1> <%= key %> </h1>
+<h1> <%= message %> </h1>
 ```
 
 ### output on browser:
@@ -69,8 +79,9 @@ hello world
 
 ## 5- ejs include tag
 ````
-<%- include("file.ejs") %>
+<%- include("file") %>
 ````
 
 * The function include() inserts another ejs file
 * It would be used when you want include a html component from other file
+* You must write the file's relative path without the extension
