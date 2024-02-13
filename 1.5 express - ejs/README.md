@@ -7,7 +7,9 @@
 
 * Outputs the value into the template (HTML escaped)
 
-* Variable should be passed from index.js like an object's key.
+* Variable should be passed from index.js.
+
+* Type of variable accepted: String, number, array and oject.
 
 For example: 
 
